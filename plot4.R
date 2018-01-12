@@ -18,7 +18,7 @@ subset[1441:2880,"Time"] <- format(subset[1441:2880,"Time"],"2007-02-02 %H:%M:%S
 png(file= "plot4.png")
 
 #making plot
-par(mfcol= c(2,2))
+par(mfcol= c(2,2)
 with(subset, plot(Time, Global_active_power, type= "l", ylab= "Global Active Power (killowatts)", xlab=""))
 with(subset, plot(Time, Sub_metering_1, type= "n", ylab= "Energy sub metering", xlab=""))
 with(subset, lines(Time, Sub_metering_1))
